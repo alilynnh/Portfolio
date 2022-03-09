@@ -10,7 +10,7 @@ VANTA.FOG({
     midtoneColor: 0x443835,
     lowlightColor: 0x301c1a,
     baseColor: 0x443835,
-    speed: 2.00,
+    speed: 3.00,
     zoom: 0.90
 })
 
