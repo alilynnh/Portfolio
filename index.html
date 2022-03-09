@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Herington</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Spartan:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Vanta Animated Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    
+    <!-- CSS  -->
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#connect">Connect</a>
+        <a href="javascript:void(0);" class="icon" onclick="expansion()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid text-center" style= "background-color:transparent !important" id="landing"> 
+        <div class="container text-center" id="header">
+            <div class="row">
+                <h1 class="col-12">INTRODUCING</h2>
+                <h2 class="col-12">ALI HERINGTON</h1>
+                <h3 class="col-12">Data Analyst & Lifelong Learner</h3>
+            </div>
+        </div>
+        <div class="container text-center" id="enter">
+            <a href="#projects">ENTER</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="image3" id="fly">
+                <img src="assets/css/img/fly-trans.png" alt="fly">
+            </div>
+            <div class="row">
+                <h2 class="col-12 text-center">PROJECTS</h1>
+            </div>
+            <div class="row">
+                <p class="col-12 text-center" id="swipe">Swipe to view more.</p>
+            </div>
+            <div class="d-flex flex-row flex-nowrap text-center" id="project-cards">
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/neural.png" class="card-img-top" alt="neural-network-charity">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Neural Network Charity Analysis</h5>
+                        <p class="card-text">A neural network model for predicting which organizations would be successful
+                            if funded by the non-profit "Alphabet Soup".</p>
+                        <p class="card-text"><b>Technologies Used:</b> Python, Pandas, scikit-learn, TensorFlow
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Neural_Network_Charity_Analysis" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/crypto.png" class="card-img-top" alt="cryptocurrencies">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Cryptocurrencies</h5>
+                        <p class="card-text">An unsupervised machine learning model that was used to determine possible groupings
+                            of cryptocurrencies.</p>
+                        <p class="card-text"><b>Technologies Used:</b> Python, Pandas, Plotly, scikit-learn
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Cryptocurrencies" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/mecha-car.png" class="card-img-top" alt="mecha-car-analysis">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">MechaCar Statistical Analysis</h5>
+                        <p class="card-text">A statistical analysis done to provide insights to the manufacturing team 
+                            of the MechaCar.</p>
+                        <p class="card-text"><b>Technologies Used:</b> R
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/MechaCar_Statistical_Analysis" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/bikesharing.png" class="card-img-top" alt="bikesharing">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Bike Sharing</h5>
+                        <p class="card-text">Data visualizations created for a business proposal to bring a bike sharing program
+                            to Des Moines.</p>
+                        <p class="card-text"><b>Technologies Used:</b> Python, Pandas, Tableau
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/bikesharing" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/earthquakes.png" class="card-img-top" alt="mapping-earthquakes">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Mapping Earthquakes</h5>
+                        <p class="card-text">A dashboard that displays global earthquake data and tectonic plate boundaries.</p>
+                        <p class="card-text"><b>Technologies Used:</b> JavaScript, HTML, CSS, Leaflet, D3, Mapbox</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Mapping_Earthquakes" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/ufos.gif" class="card-img-top" alt="ufos">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">UFOs</h5>
+                        <p class="card-text">A dashboard that displays UFO data which the user can filter on multiple
+                            criteria simultaneously.</p>
+                        <p class="card-text"><b>Technologies Used:</b> JavaScript, HTML, CSS, D3, Bootstrap
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/UFOs" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/mars.gif" class="card-img-top" alt="mission-to-mars">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Mission to Mars</h5>
+                        <p class="card-text">A web application that collects and displays information about Mars.</p>
+                        <p class="card-text"><b>Technologies Used:</b> Python, HTML, MongoDB, Flask, BeautifulSoup, Splinter
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Mission-to-Mars" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/pewlett-hackard.png" class="card-img-top" alt="pewlett-hackard">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Pewlett Hackard Analysis</h5>
+                        <p class="card-text">An analysis to determine the number of retiring employees and eligible mentors
+                            at the organization "Pewlett Hackard".</p>
+                        <p class="card-text"><b>Technologies Used:</b> PostgreSQL
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Pewlett-Hackard-Analysis" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+                <div class="card m-3 p-3 text-wrap">
+                    <img src="./Assets/css/img/stock-analysis.png" class="card-img-top" alt="stock-analysis">
+                    <div class="card-body pb-3">
+                        <h5 class="card-title pt-2">Stock Analysis</h5>
+                        <p class="card-text">An excel workbook that can compute the annual volume and return for stocks with the click
+                            of a button.</p>
+                        <p class="card-text"><b>Technologies Used:</b> Excel, VBA
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-dark"><a href="https://github.com/alilynnh/Stock-Analysis" target="_blank">See the Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class ="container" id="skills-grid">
+            <div class="image" id="one-eye">
+                <img src="assets/css/img/one-eye-trans.png" alt="one-eye">
+            </div>
+            <div class="row">
+                <h2 class="col-12 text-center">SKILLS</h2>
+            </div>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-3 text-center">
+                    <i class="devicon-python-plain"></i>
+                    <p>Python</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-r-original"></i>
+                    <p>R</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-html5-plain"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-css3-plain"></i>
+                    <p>CSS3</p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-3 text-center">
+                    <i class="devicon-javascript-plain"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-postgresql-plain"></i>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-pandas-original"></i>
+                    <p>Pandas</p>
+                </div>
+                <div class="col-3 text-center">
+                    <i class="devicon-github-original"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container" id="credentials">
+            <div class="row">
+                <h2 class="col-12 text-center">EDUCATION</h2>
+            </div>
+            <div class="credential">
+                <h3 class="location">
+                    University of Texas |
+                    <span class="credential-date">Oct 2021 - Apr 2022</span>
+                </h3>
+                <p class="credential-name">Data Analystics and Visualization Certificate</p>
+                <p class="credential-description">
+                    Through this program I am furthering my data analysis and visualization skills by learning how to use new tools
+                    and methods such as VBA, Python, SQL, and JavaScript.
+                </p>
+            </div>
+            <hr class="credential-divider" />
+            <div class="image2 d-xs-none" id="alien">
+                <img src="assets/css/img/alien-trans.png" alt="alien">
+            </div>
+            <div class="credential">
+                <h3 class="location">
+                    Texas A&M University |
+                    <span class="credential-date">Aug 2019 - Dec 2020</span>
+                </h3>
+                <p class="credential-name">M.S. Industrial-Organizational Psychology |    
+                    <span class="credential-date">GPA: 4.0</span>
+                </p>
+                <p class="credential-description">
+                    <!-- GPA: 4.0 <br><br> -->
+                    In this program I was able to obtain hands-on consulting experience in the fields of recruitement & selection,
+                    training & performance management, leadership development, and survey design. These projects not only improved
+                    my teamwork skills, but also my communication and presentation skills. In addition, I took advanced statistics 
+                    courses which expanded my data analysis skills.  
+                </p>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <h3 class="location">
+                    Texas A&M University |
+                    <span class="credential-date">Aug 2015 - Dec 2018</span>
+                </h3>
+                <p class="credential-name">B.S. Psychology |
+                    <span class="credential-date">GPA: 3.57, Major GPA: 4.0 </span>
+                </p>
+                <p class="credential-description">
+                    Certificate in Work & Organizations
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect">
+        <div class="container" id="contact-info">
+            <div class="row">
+                <h2 class="col-12 text-center">CONNECT</h2>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2 text-center">
+                    <p>I am a data analyst with web development skills and a background in I/O Psychology. I love
+                        to display data in ways that are both beautiful and accessible.
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="contact-icons">
+                <div class="col-3 offset-3 text-center">
+                    <a class="devicon-linkedin-plain" href="https://www.linkedin.com/in/ali-herington/" target="_blank"></a>
+                </div>
+                <div class="col-3 text-center">
+                    <a class="devicon-github-original" href="https://github.com/alilynnh" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
