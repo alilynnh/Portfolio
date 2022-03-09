@@ -1,0 +1,319 @@
+body {
+    background-color: #443835;
+    background-image: url('./img/black-felt.png')
+}
+
+
+
+/*  HEADER  */
+
+.jumbotron {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    position: relative;
+}
+
+#header h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    color: #f3eec7;
+}
+
+@media (max-width:640px) {
+    #header h1 {
+        font-size: 1em;
+    }
+}
+
+#header h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 7em !important;
+    color:#c7614d !important;
+    text-shadow: 5px 5px black;
+    letter-spacing: .1em;
+    overflow-wrap: break-word;
+} 
+
+@media (max-width:640px) {
+    #header h2 {
+        font-size: 4em !important;
+        text-shadow: .05em .05em black;
+        letter-spacing: .1em;
+    }
+}
+
+#header h3 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #f3eec7;
+}
+
+#enter{
+    position: absolute;
+    bottom: 0;
+}
+
+#enter a {
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+    color:#c7614d;
+    text-shadow: 2px 2px black;
+}
+
+
+
+/*  MAIN BODY */
+
+section {
+    padding-top: 50px;
+}
+
+section h2 { 
+    font-family: 'Creepster', cursive;
+    font-size: 5em !important; 
+    color:#c7614d !important;
+    text-shadow: 3px 3px black;
+    letter-spacing: .1em;
+    overflow-wrap: break-word;
+    padding-bottom: 25px;
+}
+
+@media (max-width:640px) {
+    section h2 {
+        font-size: 4em !important;
+        text-shadow: .05em .05em black;
+        letter-spacing: .1em;
+    }
+}
+
+#swipe {
+    font-family: 'Spartan', sans-serif;
+    color: #f3eec7;
+    font-size: 1em;
+}
+
+#project-cards {
+    overflow-x: scroll;
+
+}
+
+.card {
+    width: 350px;
+    background-color: #f3eec7;
+    font-family: 'Spartan', sans-serif;
+    color: #c7614d;
+    min-height: 450px;
+    min-width: 350px;
+    margin-right: 5px;
+    
+}
+
+.card-text {
+    height: 115px;
+    color:#34312C;
+}
+
+.card-img-top {
+    width: 315px;
+    height: 180px;
+}
+
+.card a {
+    color: #34312C;
+}
+
+.card-footer {
+    background-color: #f3eec7;
+    border-color: transparent;
+}
+
+.btn {
+    display: inline-block;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    background-color: #c7614d;
+    color: #34312C;
+}
+
+.btn:hover {
+    background-color: #f3eec7;
+}
+
+i {
+    font-size: 3em;
+    color: #f3eec7;
+}
+
+#skills p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    color:#f3eec7;
+}
+
+#skills-grid {
+    align-content: center;
+}
+
+.credential {
+    font-family: 'Spartan', sans-serif;
+    color: #f3eec7;
+}
+
+.credential .location {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.credential .credential-date {
+    font-size: .85em;
+    font-weight: 400;
+}
+
+.credential .credential-name {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.credential .credential-description {
+    max-width: 700px;
+}
+
+#education .credential-divider {
+    border-color: #c7614d;
+}
+
+#connect p {
+    font-family: 'Spartan', sans-serif;
+    color: #f3eec7;
+}
+
+#contact-icons {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+#connect a {
+    font-size: 3em;
+    color: #f3eec7;
+}
+
+#connect a:hover {
+    font-size: 3em;
+    color: #c7614d;
+    text-decoration-line: none;
+}
+
+
+
+/* NAVBAR STUFF */
+
+#navbar {
+    text-align: right;
+    background-color: #34312C;
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 5;
+}
+  
+#navbar a {
+    display: inline-block;
+    color: #f3eec7;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    background-color: #f3eec7;
+    color: #34312C;
+}
+
+#navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #navbar a {display: none;}
+    #navbar a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navbar .expanded a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #navbar.expanded a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+/* FUN IMAGES */
+
+.image {
+    float: left;
+    margin-left: -200px;
+    position: absolute;
+    z-index: 4;
+} 
+
+.image2 {
+    float: right;
+    margin-left: 900px;
+    margin-top: 115px;
+    position: absolute;
+    z-index: 4;
+}
+
+.image3 {
+    float: right;
+    margin-left: 1120px;
+    margin-top: 115px;
+    position: absolute;
+    z-index: 4;
+}
+
+#fly img {
+    width: 175px;
+    height: auto;
+}
+
+#one-eye img {
+    width: 200px;
+    height: auto;
+}
+
+#alien img {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 912px) {
+    #skills .image,
+    #education .image2,
+    #projects .image3 {
+      display: none;
+    }
+}
